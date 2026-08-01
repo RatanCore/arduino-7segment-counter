@@ -50,24 +50,33 @@ unsigned long previousMillis = 0;
 const long interval = 800;
 
 void setup() {
-  for (int i = 0; i < 7; i++) pinMode(segPins[i], OUTPUT);
+  for (int i = 0; i < 7; i++) {
+    pinMode(segPins[i], OUTPUT);
+  }
+
   pinMode(digit1, OUTPUT);
   pinMode(digit2, OUTPUT);
 }
 
 void loop() {
   unsigned long currentMillis = millis();
+
   if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
     currentNumber++;
-    if (currentNumber > 9) currentNumber = 0;
+
+    if (currentNumber > 9) {
+      currentNumber = 0;
+    }
   }
+
   displayNumber(currentNumber);
 }
 
 void displayNumber(int num) {
   showDigit(num, digit1);
   delayMicroseconds(2500);
+
   showDigit(num, digit2);
   delayMicroseconds(2500);
 }
@@ -79,6 +88,7 @@ void showDigit(int num, int digitPin) {
   for (int i = 0; i < 7; i++) {
     digitalWrite(segPins[i], digits[num][i]);
   }
+
   digitalWrite(digitPin, HIGH);
 }
 
