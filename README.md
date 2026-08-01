@@ -84,7 +84,7 @@ void showDigit(int num, int digitPin) {
 
 ## How to Use
 1. Connect the circuit as shown above.
-2. Upload the arduino_code file to your Arduino.
+2. Upload the arduino_code.ino file to your Arduino IDE.
 3. The display will start counting from 0 to 9 repeatedly.
 
 ## Features
