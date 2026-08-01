@@ -24,7 +24,7 @@ A simple Arduino project that continuously counts from 0 to 9 and displays the n
 
 ## How to Use
 1. Connect the circuit as shown above.
-2. Upload the arduino_code file to your Arduino.
+2. Upload the arduino_code.txt file to your Arduino.
 3. The display will start counting from 0 to 9 repeatedly.
 
 ## Features
