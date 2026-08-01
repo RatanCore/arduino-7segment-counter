@@ -22,7 +22,7 @@ A simple Arduino project that continuously counts from 0 to 9 and displays the n
 | Digit 1 (Left)      | 10 (via 220Ω)   |
 | Digit 2 (Right)     | 11 (via 220Ω)   |
 
-## arduino_code
+## code
 
 // Segment pins: a, b, c, d, e, f, g
 const int segPins[7] = {6, 5, 4, 3, 2, 7, 8};
